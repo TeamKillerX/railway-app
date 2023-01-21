@@ -8,6 +8,17 @@
 * [x] yukki support
 * [x] all
 
+# Tutorial Variables
+<img src="img/railway.jpg" widht="200px" height="500px"></img>
+
+# Add In Env
+```
+REPO_URL <value>
+AUTO_PIP_INSTALL <value>
+START_CMD <value>
+```
+<b>see read this  :</b> [RendyProjects](https://t.me/RendyProjects/1118)
+
 # License
 
 ![](https://www.gnu.org/graphics/gplv3-or-later.png)
