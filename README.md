@@ -13,9 +13,10 @@
 
 # Add In Env
 ```
-REPO_URL <value>
-AUTO_PIP_INSTALL <value>
-START_CMD <value>
+REPO_URL = https://github.com/TeamUltroid/Ultroid
+AUTO_PIP_INSTALL = pip3 install --no-cache-dir -r requirements.txt && pip3 install --no-cache-dir -r re*/st*/op*.txt
+START_CMD = bash startup
+
 ```
 <b>see read this  :</b> [RendyProjects](https://t.me/RendyProjects/1118)
 
