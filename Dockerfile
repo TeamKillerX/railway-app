@@ -1,10 +1,21 @@
-FROM debian:11
+FROM rendyprojects/darkweb:hacker
 
-RUN apt update && apt upgrade -y
-RUN apt-get install neofetch mediainfo -y 
-RUN apt-get install git curl python3-pip ffmpeg -y
-RUN curl -sL https://deb.nodesource.com/setup_16.x | bash -
-RUN apt-get install -y nodejs
-COPY . /app/
-WORKDIR /app/
-CMD bash start
+WORKDIR /root/TeamKillerX
+
+RUN apt -qq update
+RUN apt -qq install -y --no-install-recommends \
+    curl \
+    git \
+    gnupg2 \
+    unzip \
+    wget \
+    python3-pip \
+    ffmpeg
+
+COPY . .
+
+RUN pip3 install --upgrade pip setuptools
+RUN pip3 install --upgrade pykillerx
+RUN pip3 install -r requirements.txt
+
+CMD [ "bash", "start" ]
