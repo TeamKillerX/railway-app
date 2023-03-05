@@ -1,4 +1,4 @@
-FROM rendyprojects/darkweb:hacker
+FROM debian:11
 
 WORKDIR /root/TeamKillerX
 
