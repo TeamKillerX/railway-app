@@ -1,4 +1,4 @@
-FROM debian:11
+FROM okteto/python:3
 
 WORKDIR /root/TeamKillerX
 
